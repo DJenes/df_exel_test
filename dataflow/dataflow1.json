@@ -22,7 +22,7 @@
 				"source(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> rawexel",
-				"rawexel split(if (array(toString(columns())),isNull(#item) > length(columns())),",
+				"rawexel split(contains(array(toString(columns())),isNull(#item)),",
 				"     disjoint: true) ~> split1@(separatedbynull, notseparete)"
 			]
 		}
