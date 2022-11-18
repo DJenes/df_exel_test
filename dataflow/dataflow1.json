@@ -1,0 +1,30 @@
+{
+	"name": "dataflow1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "weir_exels",
+						"type": "DatasetReference"
+					},
+					"name": "rawexel"
+				}
+			],
+			"sinks": [],
+			"transformations": [
+				{
+					"name": "split1"
+				}
+			],
+			"scriptLines": [
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> rawexel",
+				"rawexel split(if (array(toString(columns())),isNull(#item) > length(columns())),",
+				"     disjoint: true) ~> split1@(separatedbynull, notseparete)"
+			]
+		}
+	}
+}
