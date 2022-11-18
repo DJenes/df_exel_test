@@ -1,0 +1,9 @@
+{
+	"name": "exel-parse-test",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d6fa9220-12e9-494a-828a-5a799ad5571e",
+		"tenantId": "cf56c255-b354-4f41-afe0-983540cc04b0"
+	}
+}
