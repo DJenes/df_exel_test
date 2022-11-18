@@ -1,0 +1,11 @@
+{
+	"name": "container_with_exel",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"sasUri": "https://parsexele.blob.core.windows.net/exelsforparse?sp=r&st=2022-11-18T15:34:04Z&se=2022-11-18T23:34:04Z&spr=https&sv=2021-06-08&sr=c&sig=0BW4O2zgFQl8KkrCBzFOgGlfx%2F0e30aG7QVHuWO2Ews%3D?sp=r&st=2022-11-18T15:34:04Z&se=2022-11-18T23:34:04Z&spr=https&sv=2021-06-08&sr=c&sig=0BW4O2zgFQl8KkrCBzFOgGlfx%2F0e30aG7QVHuWO2Ews%3D"
+		}
+	}
+}
