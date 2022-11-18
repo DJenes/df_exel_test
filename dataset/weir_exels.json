@@ -1,0 +1,21 @@
+{
+	"name": "weir_exels",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "container_with_exel",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "USF_GSS 96 ",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "2022_GraduatingSurvey_summary.xlsx",
+				"container": "exelsforparse"
+			},
+			"firstRowAsHeader": false
+		},
+		"schema": []
+	}
+}
